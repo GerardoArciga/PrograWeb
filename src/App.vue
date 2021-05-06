@@ -7,7 +7,7 @@
   <section>
         <nav id="menu">
             <ul>
-                <li><router-link to="index.html">Principal</router-link> </li>
+                <li><router-link to="/hola">Principal</router-link> </li>
                 <li><router-link to="inicio.html">Saludo</router-link></li>
                 <li><router-link to="/acerca">Acerca de</router-link></li>
                 <li><router-link to="tablas.html">Tablas</router-link></li>
@@ -26,7 +26,6 @@
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;900&display=swap');
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
 html, body { 
     margin: 0; padding: 0%;
