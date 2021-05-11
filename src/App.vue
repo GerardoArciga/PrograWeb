@@ -1,4 +1,4 @@
-<template>}
+<template>
   <section id='header'>
     <article id='banner'>
       <h1 >Mi proyecto web</h1>
@@ -17,10 +17,7 @@
        
     </section>
 
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+ 
   <router-view/>
   
 </template>
