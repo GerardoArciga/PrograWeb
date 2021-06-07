@@ -27,7 +27,7 @@
 
         <div class="row mt-2">
           <div class="col-6">
-            <div class="btn btn-info" @click="store()">Guardar</div>
+            <div class="btn btn-info" @click="store(user)">Guardar</div>
           </div>
           <div class="col-6">
             <div class="btn btn-danger" @click='viewForm=false'>Cancelar</div>
@@ -45,15 +45,15 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr v-for="user in users" v-bind:key="user">
             <td>[Editar] [Borrar]</td>
-            <td>{{ user.nombre }}</td>
+            <td>{{ user }}</td>
             <td></td>
             <td></td>
           </tr>
           <tr>
             <td>[Editar] [Borrar]</td>
-            <td>Pedro</td>
+            <td>{{ user }}</td>
             <td></td>
             <td></td>
           </tr> 
@@ -79,9 +79,11 @@ export default {
   },
   // Dentro de methods se especifican todos los metodos(funciones)
   methods:{
-    store(){
-      console.log(this.user)
-      
+    store(user){
+      //guardar en db
+      //this.users.push( this.user )
+      this.user.push(user)
+      console.log(this.users)
     }
   }
   
