@@ -23,7 +23,7 @@ const routes = [
   {
     path: '/hola',
     name: 'hola',
-    component: () => import('../components/HolaMundo.vue')
+    component: () => import('../components/HelloWorld.vue')
   }
 ]
 
